@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>verbinden Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Aditya Gupta</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li>
+            <img
+              src="./assets/moon.png"
+              alt="Toggle Dark Mode"
+              id="theme-icon-desktop"
+              class="theme-icon"
+              onclick="toggleTheme()"
+            />
+          </li>
+        </ul>
+
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Aditya Gupta</div>
+      <div class="hamburger-menu">
+        <div class="mobile-icons-container">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <img
+          src="./assets/moon.png"
+          alt="Toggle Dark Mode"
+          id="theme-icon-mobile"
+          class="theme-icon mobile"
+          onclick="toggleTheme()"
+        />
+      </div>
+
+
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="assets\roundCropped.jpg" alt="profile picture" />
+      </div>
+      <div class="section__text">
+          <p class="section__text__p1 type-line" id="line1"></p>
+          <h1 class="title type-line" id="line2"></h1>
+          <p class="section__text__p2 type-line" id="line3"></p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('/assets/AdityaGupta.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/aditya-gupta-99273b250/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/verbinden6'"
+          />
+        </div>
+        <div class="coding-profiles">
+          <a href="https://leetcode.com/u/verbinden/" target="_blank">
+            <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/leetcode.svg" alt="LeetCode" />
+          </a>
+          <a href="https://www.geeksforgeeks.org/user/verbinden/" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/4/43/GeeksforGeeks.svg" alt="GeeksforGeeks" />
+          </a>
+          <a href="https://www.hackerrank.com/profile/adityaguptawork1" target="_blank">
+            <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/hackerrank.svg" alt="HackerRank" />
+          </a>
+          <a href="https://www.naukri.com/code360/profile/eb7fd5f9-c539-4a09-9bda-e2eb88391eac" target="_blank">
+            <img src="assets\codestudio.png" alt="Coding Ninjas Studio" />
+          </a>
+          <a href="https://codolio.com/profile/vebinden" target="_blank">
+            <img src="assets\codolio.jpg" alt="Codolio" />
+          </a>
+        </div>
+      </div>
+      
+     <img
+        src="./assets/arrow.png"
+        alt="Scroll to About"
+        class="icon arrow"
+        onclick="location.href='#about'"
+      />
+    </section>
+    
+    <section id="about">
+      <p class="section__text__p1">Academic Background</p>
+      <h1 class="title">Education</h1>
+      <div class="about-content">
+        <div class="details-container education-card">
+          <img src="./assets/education.png" alt="Education icon" class="icon" />
+          <h3>Bachelors of Technology</h3>
+          <p>
+            Computer Science Engineering<br>
+            <strong>Jaypee University of Information Technology</strong><br>
+            CGPA: 8.4 / 10
+          </p>
+        </div>
+
+        <p class="about-text">
+          I’m a passionate and self-driven individual with a strong foundation in software development,
+          currently looking for opportunities to grow and contribute in real-world projects. I have
+          hands-on knowledge of fundamental CS subjects including <strong>Operating Systems, Object-Oriented
+          Programming, Database Management Systems, and Computer Networks</strong> .
+          <br><br>
+          I also have a keen interest in <strong>Cybersecurity</strong>, and enjoy exploring tools and technologies
+          related to network analysis, digital forensics, and ethical hacking.
+        </p>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Scroll to Skills"
+        class="icon arrow"
+        onclick="location.href='#skills'"
+      />
+    </section>
+
+
+<section id="skills">
+  <p class="section__text__p1">Explore My</p>
+  <h1 class="title">Skills</h1>
+
+  <div class="skills-wrapper">
+    <!-- Languages -->
+    <div class="skill-group">
+      <h3>Languages</h3>
+      <div class="skills-row">
+        <div class="icon-card">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++" />
+          <p>C++</p>
+        </div>
+        <div class="icon-card">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" alt="C" />
+          <p>C</p>
+        </div>
+        <div class="icon-card">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" />
+          <p>Python</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Frontend -->
+    <div class="skill-group">
+      <h3>Frontend</h3>
+      <div class="skills-row">
+        <div class="icon-card">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML" />
+          <p>HTML</p>
+        </div>
+        <div class="icon-card">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS" />
+          <p>CSS</p>
+        </div>
+        <div class="icon-card">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" />
+          <p>JavaScript</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Backend -->
+    <div class="skill-group">
+      <h3>Backend</h3>
+      <div class="skills-row">
+        <div class="icon-card">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL" />
+          <p>MySQL</p>
+        </div>
+        <div class="icon-card">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL" />
+          <p>PostgreSQL</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Libraries / Frameworks -->
+    <div class="skill-group">
+      <h3>Libraries / Frameworks</h3>
+      <div class="skills-row">
+      <div class="icon-card">
+        <img src="./assets/opengl.svg" alt="OpenGL" />
+        <p>OpenGL</p>
+      </div>
+      <div class="icon-card">
+        <img src="https://www.sfml-dev.org/images/logo.png" alt="SFML" />
+        <p>SFML</p>
+      </div>
+        <div class="icon-card">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/3/31/NumPy_logo_2020.svg" alt="NumPy" />
+          <p>NumPy</p>
+        </div>
+        <div class="icon-card">
+          <img src="https://avatars.githubusercontent.com/u/5625870?s=200&v=4" alt="PyAudio" />
+          <p>PyAudio</p>
+        </div>
+        <div class="icon-card">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" alt="Flask" />
+          <p>Flask</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tools & Technologies -->
+    <div class="skill-group">
+      <h3>Tools & Technologies</h3>
+      <div class="skills-row">
+        <div class="icon-card">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/2/21/Matlab_Logo.png" alt="MATLAB" />
+          <p>MATLAB</p>
+        </div>
+        <div class="icon-card">
+          <img src="assets\SimPy_logo.svg.png" alt="Simulink" />
+          <p>Simulink</p>
+        </div>
+        <div class="icon-card">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" />
+          <p>Git</p>
+        </div>
+        <div class="icon-card">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" />
+          <p>GitHub</p>
+        </div>
+        <div class="icon-card">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" alt="Linux" />
+          <p>Linux</p>
+        </div>
+        <div class="icon-card">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="VS Code" />
+          <p>VS Code</p>
+        </div>
+        <div class="icon-card">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/3/38/Jupyter_logo.svg" alt="Jupyter" />
+          <p>Jupyter</p>
+        </div>
+          <div class="icon-card">
+            <img src="assets\Wireshark.svg" alt="Wireshark" />
+            <p>Wireshark</p>
+          </div>
+        <div class="icon-card">
+          <img src="assets\ftk.jpg" alt="FTK Imager" />
+          <p>FTK Imager</p>
+        </div>
+        <div class="icon-card">
+          <img src="assets\VirtualBox.svg" alt="VirtualBox" />
+          <p>VirtualBox</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <img
+    src="./assets/arrow.png"
+    alt="Scroll to Projects"
+    class="icon arrow"
+    onclick="location.href='#projects'"
+  />
+</section>
+
+
+
+<section id="projects">
+  <p class="section__text__p1">Browse My Recent</p>
+  <h1 class="title">Projects</h1>
+  <div class="skills-details-container">
+    <div class="about-containers">
+
+      <div class="details-container color-container">
+        <div class="article-container">
+          <!-- <img
+            src="./assets/project-1.png"
+            alt="Project 1"
+            class="project-img"
+          /> -->
+        </div>
+        <h2 class="skills-sub-title project-title">Meteor Escape</h2>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2 project-btn"
+            onclick="location.href='https://github.com/'"
+          >
+            Github
+          </button>
+          <button
+            class="btn btn-color-2 project-btn"
+            onclick="location.href='https://github.com/'"
+          >
+            Live Demo
+          </button>
+        </div>
+      </div>
+
+      <div class="details-container color-container">
+        <div class="article-container">
+          <!-- <img
+            src="./assets/project-2.png"
+            alt="Project 2"
+            class="project-img"
+          /> -->
+        </div>
+        <h2 class="skills-sub-title project-title">Sort Snap</h2>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2 project-btn"
+            onclick="location.href='https://github.com/'"
+          >
+            Github
+          </button>
+          <button
+            class="btn btn-color-2 project-btn"
+            onclick="location.href='https://github.com/'"
+          >
+            Live Demo
+          </button>
+        </div>
+      </div>
+
+      <div class="details-container color-container">
+        <div class="article-container">
+          <!-- <img
+            src="./assets/project-3.png"
+            alt="Project 3"
+            class="project-img"
+          /> -->
+        </div>
+        <h2 class="skills-sub-title project-title">Speech To Text Censorship</h2>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2 project-btn"
+            onclick="location.href='https://github.com/'"
+          >
+            Github
+          </button>
+          <button
+            class="btn btn-color-2 project-btn"
+            onclick="location.href='https://github.com/'"
+          >
+            Live Demo
+          </button>
+        </div>
+      </div>
+
+      <!-- Typing Dash Project -->
+      <div class="details-container color-container">
+        <div class="article-container">
+          <!-- Add your project image here -->
+          <!-- <img
+            src="./assets/project-typing-dash.png"
+            alt="Typing Dash"
+            class="project-img"
+          /> -->
+        </div>
+        <h2 class="skills-sub-title project-title">Typing Dash</h2>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2 project-btn"
+            onclick="location.href='https://github.com/'"
+          >
+            Github
+          </button>
+          <button
+            class="btn btn-color-2 project-btn"
+            onclick="location.href='https://github.com/'"
+          >
+            Live Demo
+          </button>
+        </div>
+      </div>
+
+      <!-- Secure Chat Project -->
+      <div class="details-container color-container">
+        <div class="article-container">
+          <!-- Add your project image here -->
+          <!-- <img
+            src="./assets/project-secure-chat.png"
+            alt="Secure Chat"
+            class="project-img"
+          /> -->
+        </div>
+        <h2 class="skills-sub-title project-title">Secure Chat</h2>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2 project-btn"
+            onclick="location.href='https://github.com/'"
+          >
+            Github
+          </button>
+          <button
+            class="btn btn-color-2 project-btn"
+            onclick="location.href='https://github.com/'"
+          >
+            Live Demo
+          </button>
+        </div>
+      </div>
+
+    </div> <!-- end of .about-containers -->
+  </div> <!-- end of .skills-details-container -->
+
+  <img
+    src="./assets/arrow.png"
+    alt="Arrow icon"
+    class="icon arrow"
+    onclick="location.href='./#contact'"
+  />
+</section>
+
+
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:adityaguptaworks04@gmail.com">adityaguptaworks04@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/aditya-gupta-99273b250/">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>< / >  Aditya Gupta.</p>
+      <p>Copyright &#169; 2025 All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
