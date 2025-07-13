@@ -1,4 +1,4 @@
-#Personal Portfolio
+## Personal Portfolio
 Welcome to my personal **portfolio website**. I'm a software developer, currently building and refining my digital presence. This site is designed to introduce who I am, showcase my work, and provide a space to eventually link my best projects.
 
 > ⚠️ **Note**: This portfolio is a work in progress. Project GitHub and live demo links are placeholders for now — more updates coming soon!
