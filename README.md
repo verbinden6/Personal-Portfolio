@@ -3,10 +3,6 @@ Welcome to my personal **portfolio website**. I'm a software developer, currentl
 
 >  **Note**: This portfolio is a work in progress.
 
-## 🚀 About Me
-
-I'm a Computer Science undergrad with a strong interest in **software development**, web technologies, and information security. This portfolio is my first step toward presenting my skills and identity in a professional, organized way online.
-
 ---
 
 ## Project Features
@@ -20,19 +16,18 @@ I'm a Computer Science undergrad with a strong interest in **software developmen
 
 ---
 
-## 🛠 Tech Stack
+## Tech Stack
 
 - HTML5
 - CSS3 (with media queries for responsiveness)
 - JavaScript (Vanilla)
 - FontAwesome & custom icons
 
- Add blog or achievements section
-
 ---
 
 ## Folder Structure
 Portfolio/
+
 ├── assets/              →  Images, icons, and logos  
 ├── index.html           →  Main HTML file (structure of the site)  
 ├── style.css            →  Main stylesheet for layout and design  
